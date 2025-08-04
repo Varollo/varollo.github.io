@@ -11,6 +11,7 @@
   z-index: 5;
   cursor: pointer;
   transition: all 250ms ease-out;
+  text-decoration: none;
 }
 
 .section-container:hover {
