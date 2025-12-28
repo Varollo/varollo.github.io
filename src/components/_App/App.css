@@ -1,0 +1,28 @@
+:root {
+  --primary-color: #8d99ae;
+  --secondary-color: #ef233c;
+  --foreground-color: #edf2f4;
+  --background-color: #2b2d42;
+
+  --shadow: 0 4px rgba(0, 0, 0, 0.1);
+
+  --font: "Nunito Sans", sans-serif;
+  font-family: var(--font);
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+p {
+  font-family: var(--font);
+}
+
+#content {
+  background-color: var(--background-color);
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}

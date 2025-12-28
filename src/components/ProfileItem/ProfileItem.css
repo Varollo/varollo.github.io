@@ -1,0 +1,19 @@
+.profileItem {
+  display: flex;
+  align-items: flex-end;
+  gap: .5rem;
+  width: 135%;
+}
+
+.profileTitle {
+  font-family: monospace;
+  font-size: 1.1rem;
+  color: var(--background-color);
+}
+
+.profileContent {
+  color: var(--primary-color);
+  width: 100%;
+  flex-grow: 1;
+  border-bottom: 2px solid var(--primary-color);
+}

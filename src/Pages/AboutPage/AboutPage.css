@@ -1,0 +1,22 @@
+.profile {
+  margin: 1rem;
+  margin-left: 5%;
+  display: flex;
+  gap: 10rem;
+}
+
+.bio {
+  background-color: var(--primary-color);
+
+  margin: 1.5rem;
+  padding: 1rem;
+
+  border-radius: 1rem;
+}
+
+.bio p {
+  color: var(--foreground-color);
+  font-size: 1.5rem;
+  margin: 0;
+  text-align: justify;
+}
