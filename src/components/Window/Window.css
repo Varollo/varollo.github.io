@@ -1,20 +1,25 @@
 .window {
   box-shadow: var(--shadow);
-  background-color: var(--foreground-color);
   
   width: 60rem;
   height: 45rem;
 
   margin-top: 1.5rem;
 
-  border-radius: 1rem;
+  border-radius: 1.35rem;
 
   animation: scaleUp 0.5s ease-in-out forwards;
   transform-origin: 50% 0;
 }
 
-.window.dark {
+.window-light {
+  background-color: var(--foreground-color);
+}
+
+.window-dark {
+  border: .25rem solid var(--primary-color);
   background-color: var(--background-color);
+  opacity: 75%;
 }
 
 .window.scale-down-exit {

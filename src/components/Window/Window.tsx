@@ -5,10 +5,11 @@ import "./Window.css";
 
 interface Props {
   title: string;
+  mode?: "light" | "dark";
   children?: ReactNode;
 }
 
-const Window = ({children, title}: Props) => {
+const Window = ({ children, title, mode = "light" }: Props) => {
   const [isOpen, setOpen] = useState(true);
   const navigate = useNavigate();
 
@@ -22,7 +23,7 @@ const Window = ({children, title}: Props) => {
 
   return (
     <div
-      className={isOpen ? "window" : "window scale-down-exit"}
+      className={`window ${isOpen ? "" : "scale-down-exit"} window-${mode}`}
       onAnimationEnd={handleAnimationEnd}
     >
       <WindowHeader onClose={onClose} title={title} />
