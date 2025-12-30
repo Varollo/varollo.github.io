@@ -1,6 +1,7 @@
 :root {
   --primary-color: #8d99ae;
-  --secondary-color: #ef233c;
+  --secondary-color: #b2bcc9;
+  --terciary-color: #9caab8;
   --foreground-color: #edf2f4;
   --background-color: #2b2d42;
 
@@ -10,19 +11,35 @@
   font-family: var(--font);
 }
 
+html,
+body {
+  overflow: hidden;
+  background-color: #3f445f;
+}
+
 body {
   margin: 0;
-  overflow: hidden;
+  position: relative;
 }
 
 p {
   font-family: var(--font);
 }
 
+a {
+  text-decoration: none;
+}
+
 #content {
-  background-color: var(--background-color);
   margin: 0;
   display: flex;
   justify-content: center;
-  height: 100vh;
+}
+
+@media screen and (max-width: 768px) {
+  html,
+  body {
+    overflow: auto;
+    margin-bottom: 1rem;
+  }
 }

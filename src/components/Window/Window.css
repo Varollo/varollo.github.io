@@ -47,3 +47,10 @@
     transform: scale(0);    /* Settles at exact size */
   }
 }
+
+@media screen and (max-width: 768px) {
+  .window {
+    width: 90vw;
+    height: auto;
+  }
+}

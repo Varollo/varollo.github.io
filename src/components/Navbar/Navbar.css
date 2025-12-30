@@ -60,3 +60,15 @@ nav {
   margin: 0;
   font-size: .75rem;
 }
+
+@media screen and (max-width: 600px) {
+  .date-time {
+    display: none;
+  }
+
+  .nav-buttons {
+    position: static;
+    transform: none;
+    margin: 0 auto;
+  }
+}

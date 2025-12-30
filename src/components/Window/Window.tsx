@@ -4,10 +4,11 @@ import { useNavigate } from "react-router-dom";
 import "./Window.css";
 
 interface Props {
+  title: string;
   children?: ReactNode;
 }
 
-const Window = (props: Props) => {
+const Window = ({children, title}: Props) => {
   const [isOpen, setOpen] = useState(true);
   const navigate = useNavigate();
 
@@ -20,14 +21,12 @@ const Window = (props: Props) => {
   }
 
   return (
-    <div>
-      <div
-        className={isOpen ? "window" : "window scale-down-exit"}
-        onAnimationEnd={handleAnimationEnd}
-      >
-        <WindowHeader onClose={onClose} title="ABOUT ME" />
-        {props.children}
-      </div>
+    <div
+      className={isOpen ? "window" : "window scale-down-exit"}
+      onAnimationEnd={handleAnimationEnd}
+    >
+      <WindowHeader onClose={onClose} title={title} />
+      {children}
     </div>
   );
 };

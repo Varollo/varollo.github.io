@@ -1,19 +1,25 @@
 .profileItem {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   gap: .5rem;
-  width: 135%;
+  border-bottom: 2px solid var(--secondary-color);
 }
 
 .profileTitle {
   font-family: monospace;
   font-size: 1.1rem;
-  color: var(--background-color);
+  color: var(--foreground-color);
+}
+
+.profileTitle img {
+  height: 2rem;
+  width: auto;
+  filter: saturate(0%) brightness(300%);
 }
 
 .profileContent {
-  color: var(--primary-color);
-  width: 100%;
+  color: var(--foreground-color);
+  opacity: 50%;
   flex-grow: 1;
-  border-bottom: 2px solid var(--primary-color);
+  text-align: right;
 }

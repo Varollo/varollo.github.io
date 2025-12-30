@@ -1,0 +1,13 @@
+.folder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.folder p {
+  font-weight: bold;
+  text-align: center;
+  font-size: 2rem;
+  color: var(--foreground-color);
+  width: 75%;
+}

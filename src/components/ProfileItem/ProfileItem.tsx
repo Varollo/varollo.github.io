@@ -1,17 +1,16 @@
+import type { ReactNode } from "react";
 import "./ProfileItem.css";
 
 interface Props {
-  title: string;
+  title: ReactNode;
   content: string;
 }
 
 const ProfileItem = (props: Props) => {
   return (
     <li className="profileItem">
-      <p className="profileTitle">
-        <strong>{props.title.toUpperCase()}:</strong>
-      </p>
-      <p className="profileContent"><i>{props.content}</i></p>
+      <p className="profileTitle">{props.title}</p>
+      <p className="profileContent">{props.content}</p>
     </li>
   );
 };
