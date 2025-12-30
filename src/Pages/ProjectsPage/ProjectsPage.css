@@ -1,0 +1,48 @@
+.projectsWindow * {
+  font-family: monospace;
+  color: var(--primary-color);
+  margin: 0.5rem;
+}
+
+.projectsWindow p {
+  font-size: 1rem;
+}
+
+.terminalTxt,
+.projectsWindow h2 {
+  color: var(--foreground-color);
+}
+
+.projectHighlight {
+  display: flex;
+  gap: 1.25rem;
+  border: 0.25rem dotted var(--primary-color);
+  margin: 1rem 3rem 1.5rem 3rem;
+}
+
+.projectDescription {
+  text-align: right;  
+}
+
+.projectDescription p {
+  text-align: left;
+}
+
+.projectDescription a {
+  filter: none;
+  transition: all .2s ease-in-out;
+}
+
+.projectDescription a:hover {
+  filter: brightness(150%);
+}
+
+@media screen and (max-width: 768px) {
+  .projectHighlight {
+    gap: 0;
+  }
+
+  .projectsWindow {
+    height: 150vh;
+  }
+}

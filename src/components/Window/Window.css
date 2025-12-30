@@ -1,0 +1,61 @@
+.window {
+  box-shadow: var(--shadow);
+  
+  width: 60rem;
+  height: 45rem;
+
+  margin-top: 1.5rem;
+
+  border-radius: 1.35rem;
+
+  animation: scaleUp 0.5s ease-in-out forwards;
+  transform-origin: 50% 0;
+}
+
+.window-light {
+  background-color: var(--foreground-color);
+}
+
+.window-dark {
+  border: .25rem solid var(--primary-color);
+  background-color: var(--background-color);
+  opacity: 75%;
+}
+
+.window.scale-down-exit {
+  animation: scaleDown 0.25s ease-in-out forwards;
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(0);
+  }
+  60% {
+    transform: scale(1.05); /* Grows slightly larger than 100% */
+  }
+  80% {
+    transform: scale(0.95); /* Shrinks slightly smaller than 100% */
+  }
+  100% {
+    transform: scale(1);    /* Settles at exact size */
+  }
+}
+
+@keyframes scaleDown {
+  0% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(1.05); /* Grows slightly larger than 100% */
+  }
+  100% {
+    transform: scale(0);    /* Settles at exact size */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .window {
+    width: 90vw;
+    height: auto;
+  }
+}

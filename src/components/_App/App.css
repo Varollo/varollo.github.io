@@ -1,0 +1,50 @@
+:root {
+  --primary-color: #8d99ae;
+  --secondary-color: #b2bcc9;
+  --terciary-color: #9caab8;
+  --foreground-color: #edf2f4;
+  --background-color: #2b2d42;
+
+  --shadow: 0 4px rgba(0, 0, 0, 0.1);
+
+  --font: "Nunito Sans", sans-serif;
+  font-family: var(--font);
+}
+
+html,
+body {
+  overflow: hidden;
+  background-color: #3f445f;
+}
+
+body {
+  margin: 0;
+  position: relative;
+}
+
+p {
+  font-family: var(--font);
+}
+
+a {
+  text-decoration: none;
+}
+
+#content {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  html,
+  body {
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-bottom: 1rem;
+  }
+
+  body {
+    position: relative;
+  }
+}

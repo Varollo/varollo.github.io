@@ -1,0 +1,108 @@
+.profileTop {
+  margin: 1rem;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.profileBottom {
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  display: flex;
+  gap: 2rem;
+}
+
+.profileBox {
+  background-color: var(--primary-color);
+  border-radius: 1rem;
+  min-width: 240px;
+  margin: 0 auto;
+}
+
+.profileInfo {
+  flex-grow: 1;
+  padding: 1.5rem 2.5rem;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.profileSocials {
+  padding: 0rem 1rem 1rem 0rem;
+  display: flex;
+}
+
+.profileSocials .profileItem {
+  border-top: 2px solid transparent;
+  border-left: 2px solid transparent;
+  border-right: 2px solid transparent;
+  transition: all 0.2s ease-in-out;
+}
+
+.profileSocials .profileItem:hover {
+  border: 2px dashed var(--secondary-color);
+  border-radius: 1rem;
+}
+
+.profileSocials a {
+  text-decoration: none;
+}
+
+.profileBio {
+  padding: 1rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.profileBio h1 {
+  color: var(--foreground-color);
+  opacity: 50%;
+  margin: 0;
+}
+
+.profileBio p {
+  color: var(--foreground-color);
+  font-size: 1.45rem;
+  margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .profileTop,
+  .profileBottom {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profileBio {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    margin-bottom: 2rem;;
+  }
+
+  .profileBio p {
+    text-align: center;
+  }
+  
+  .profileSocials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .profileSocials .profileItem .profileContent {
+    display: none;
+  }
+
+  .profileSocials ul {
+    display: flex;
+    flex-direction: row;
+    padding-left: 0;
+  }
+
+  body {
+    overflow: auto;
+  }
+}
