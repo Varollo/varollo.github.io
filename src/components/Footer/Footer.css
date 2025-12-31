@@ -1,0 +1,23 @@
+.footer {
+  position: absolute;
+  top: 95vh;
+  left: 50vw;
+  transform: translate(-50%, -100%);
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  align-items: center;
+  justify-content: center;
+  z-index: 0;
+}
+
+.footer * {
+  text-align: center;
+  margin: 0;
+  color: var(--primary-color);
+  opacity: 50%;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
