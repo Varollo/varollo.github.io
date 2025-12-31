@@ -45,22 +45,6 @@ nav {
   height: 100%;
 }
 
-.date-time {
-  color: var(--foreground-color);
-  margin-left: auto;
-  text-align: right;
-  display: flex;
-  flex-direction: column;
-  font-family: serif;
-  padding-left: 1rem;
-  border-left: 2px solid var(--foreground-color);
-}
-
-.date-time p {
-  margin: 0;
-  font-size: .75rem;
-}
-
 @media screen and (max-width: 600px) {
   .date-time {
     display: none;
