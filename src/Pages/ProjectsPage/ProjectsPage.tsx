@@ -1,5 +1,5 @@
 import Window from "../../components/Window/Window";
-import { projectsPageData } from "./ProjectsPageData";
+import { projectsPageData } from "./projectsPageData";
 
 import "./ProjectsPage.css";
 
