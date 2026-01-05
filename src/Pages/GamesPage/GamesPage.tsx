@@ -1,7 +1,7 @@
-import { Link } from "react-router-dom";
-
 import Folder from "../../components/Folder/Folder";
 import Window from "../../components/Window/Window";
+
+import { gamesPageData } from "./gamesPageData";
 
 import "./GamesPage.css";
 
@@ -13,15 +13,11 @@ const GamesPage = () => {
       </div>
 
       <div className="gamesBox gamesContent">
-        <Link to="https://varollo.itch.io/who-killed-allita">
-          <Folder name="Who Killed Alita?" />
-        </Link>
-        <Link to="https://varollo.itch.io/intensive-bugs">
-          <Folder name="Intensive Bugs" />
-        </Link>
-        <Link to="https://gorxer.itch.io/paws-for-a-cause">
-          <Folder name="Paws for a Cause" />
-        </Link>
+        {gamesPageData.map((data, i) => (
+          <a key={`${data.title}_${i}`} href={data.url}>
+            <Folder name={data.title} />
+          </a>
+        ))}
       </div>
     </Window>
   );
