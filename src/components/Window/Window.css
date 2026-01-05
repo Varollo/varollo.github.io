@@ -4,7 +4,7 @@
   width: 60rem;
   height: 45rem;
 
-  margin-top: 1.5rem;
+  margin: 1.5rem;
 
   border-radius: 1.35rem;
 
@@ -12,6 +12,9 @@
   transform-origin: 50% 0;
 
   z-index: 2;
+
+  overflow-y: scroll;
+  padding-bottom: 1rem;
 }
 
 .window-light {
