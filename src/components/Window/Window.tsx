@@ -22,12 +22,14 @@ const Window = ({ children, title, mode = "light" }: Props) => {
   }
 
   return (
-    <div
-      className={`window ${isOpen ? "" : "scale-down-exit"} window-${mode}`}
-      onAnimationEnd={handleAnimationEnd}
-    >
-      <WindowHeader onClose={onClose} title={title} />
-      {children}
+    <div className="windowContainer">
+      <div
+        className={`window ${isOpen ? "" : "scale-down-exit"} window-${mode}`}
+        onAnimationEnd={handleAnimationEnd}
+      >
+        <WindowHeader onClose={onClose} title={title} />
+        {children}
+      </div>
     </div>
   );
 };
